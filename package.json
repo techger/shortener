@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/techstar-cloud/tersely/issues"
   },
-  "homepage": "https://github.com/techstar-cloud/tersely#readme"
+  "homepage": "https://github.com/techstar-cloud/tersely#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.13.0"
+  }
 }
