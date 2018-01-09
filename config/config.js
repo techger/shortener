@@ -1,9 +1,5 @@
 var config = {};
 
-config.db = {};
-config.webhost = 'http://localhost:3000/';
-
-config.db.host = 'localhost';
-config.db.name = 'url_shortener';
+config.webhost = 'https://techstar-url-shortener-tortuvshin.c9users.io/';
 
 module.exports = config;

@@ -44,6 +44,23 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/tersely.js"></script>
+  <script>
+    $('.btn-shorten').on('click', function(){
+    
+      $.ajax({
+        url: '/api/shorten',
+        type: 'POST',
+        dataType: 'JSON',
+        data: {url: $('#url-field').val()},
+        success: function(data){
+            var resultHTML = '<a class="result" href="' + data.shortUrl + '">'
+                + data.shortUrl + '</a>';
+            $('#link').html(resultHTML);
+            $('#link').hide().fadeIn('slow');
+        }
+      });
+    
+    });
+  </script>
 </body>
 </html>
